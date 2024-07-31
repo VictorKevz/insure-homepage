@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+:root{
+  --Dark-Violet: hsl(256, 26%, 20%);
+--Grayish-Blue: hsl(216, 30%, 68%);
+
+
+--Very-Dark-Violet: hsl(270, 9%, 17%);
+--Dark-Grayish-Violet: hsl(273, 4%, 51%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Karla", sans-serif;
+  width: 100%;
+  color: var(--Dark-Grayish-Violet);
+  /* color: red; */
+  overflow-x: hidden;
+
+  /* background-color: var(--Very-Dark-Violet); */
+}
+h1,h2,h3,h4{
+  font-family: "DM Serif Display", serif;
+  color: var(--Very-Light-Gray);
+}
+p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: .007rem;
+
+}
+li,a{
+  list-style-type: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 300;
+
+}
+.outer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-size: 100%;
+
+}
+
+
+.inner-container {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}

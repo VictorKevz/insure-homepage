@@ -1,0 +1,24 @@
+/* Common Styles */
+
+.nav.wrapper,.hero.wrapper,.hero-container.wrapper,.features.wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link{
+  width: 14.7rem;
+  height: 4rem;
+  border: 2px solid var(--Very-Light-Gray);
+  color: var(--Very-Light-Gray);  
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-transform: uppercase;
+  font-size: 1.42rem;
+letter-spacing: 1.7px;
+font-weight: 700;
+
+
+}

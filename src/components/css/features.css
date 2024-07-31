@@ -1,0 +1,99 @@
+.features {
+  justify-content: center;
+  padding-top: 2rem;
+  /* min-height: 605px; */
+}
+
+.features-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1111px;
+  width: 100%;
+}
+.features-main-title {
+  font-size: 6.95rem;
+  font-weight: 500;
+  letter-spacing: .02rem;
+  color: var(--Very-Dark-Violet);
+  
+
+}
+.features-card {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7.9rem;
+  padding-bottom: 15.3rem;
+}
+.feature-item,
+.feature-text-container {
+  display: flex;
+  flex-direction: column;
+}
+.feature-item{
+    max-width: 370.3333px;
+}
+.feature-icon.second{
+    margin-left: 13px;
+}
+.feature-icon.third{
+    margin-left: -11px;
+}
+.feature-text-container{
+    margin-top: 3rem;
+    
+}
+.feature-title {
+  font-size: 2.7rem;
+  color: var(--Very-Dark-Violet);
+
+}
+.feature-title.second{
+margin-left: 12px;   
+}
+.feature-title.third{
+    margin-left: -11px;   
+    }
+.feature-parag{
+    margin-top: 1.7rem;
+    line-height: 1.67;
+    letter-spacing: .007rem;
+}
+.feature-parag.first {
+  max-width: 330px;
+}
+.feature-parag.second {
+  max-width: 355px;
+  margin-left: 12px;
+}
+.feature-parag.third {
+  max-width: 340px;
+  
+}
+
+
+.cta-container{
+    width: 100%;
+    min-height: 250px;
+    padding: 0 8rem;
+    background-color: var(--Very-Dark-Violet);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../../assets/images/bg-pattern-how-we-work-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+
+}
+.cta-title{
+    font-size: 5.6rem;
+    margin-top: 7px;
+    line-height: .96;
+    letter-spacing: -.057rem;
+}
+.cta.link{
+    width: 16rem;
+    margin-right: 1px;
+    margin-top: 1px;
+}
