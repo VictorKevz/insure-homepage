@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../Varinats";
 import "../css/footer.css";
 import logo from "../../assets/images/logo.svg";
 import fb from "../../assets/images/icon-facebook.svg";
@@ -9,48 +11,65 @@ import footerLinks from "./Data";
 
 function Footer() {
   return (
-    <div className="footer wrapper">
+    <motion.div 
+    className="footer wrapper"
+    variants={fadeIn("up", 0)}
+    initial="hidden"
+    whileInView={"visible"}
+    viewport={{ once: false, amount: 0.1 }}
+    >
       <div className="footer-container">
         <div className="footer-logo-container-socials">
           <img src={logo} alt="footer-logo" className="footer-logo" />
-          <div className="social-icons-container">
+          <motion.div 
+          className="social-icons-container"
+          variants={fadeIn("right", 0.3)}
+          initial="hidden"
+          whileInView={"visible"}
+          viewport={{ once: false, amount: 0.1 }}
+          exit="exit"
+          >
             <img src={fb} alt="facebook-icon" className="footer-icon" />
             <img src={twitter} alt="twitter-icon" className="footer-icon" />
             <img src={pin} alt="pinterest-icon" className="footer-icon" />
             <img src={ig} alt="instagram-icon" className="footer-icon" />
-          </div>
+          </motion.div>
         </div>
         <ul className="footer-links-container">
           {footerLinks.map((obj) => {
             let footerClassName;
             if (obj.id === 1) {
               footerClassName = "first";
-            }
-            if (obj.id === 2) {
+            } else if (obj.id === 2) {
               footerClassName = "second";
-            }
-            if (obj.id === 3) {
+            } else if (obj.id === 3) {
               footerClassName = "third";
-            }
-            else{
-              footerClassName = "fourth"
+            } else {
+              footerClassName = "fourth";
             }
             return (
-              <li key={obj.id} className={`link-name ${footerClassName}`}>
+              <motion.li 
+              key={obj.id} 
+              className={`link-name ${footerClassName}`}
+              variants={fadeIn("down", 0.3)}
+              initial="hidden"
+              whileInView={"visible"}
+              viewport={{ once: false, amount: 0.1 }}
+              >
                 {obj.name}
-                <ul className="footer-link">
+                <ul className={`footer-link ${footerClassName}`}>
                   {obj.links.map((link, index) => (
-                    <li key={index} className="link-item">
+                    <li key={index} className={`link-item ${footerClassName}`}>
                       {link}
                     </li>
                   ))}
                 </ul>
-              </li>
+              </motion.li>
             );
           })}
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -20,10 +20,8 @@ body {
   font-family: "Karla", sans-serif;
   width: 100%;
   color: var(--Dark-Grayish-Violet);
-  /* color: red; */
   overflow-x: hidden;
 
-  /* background-color: var(--Very-Dark-Violet); */
 }
 h1,h2,h3,h4{
   font-family: "DM Serif Display", serif;
