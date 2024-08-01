@@ -61,7 +61,7 @@
 }
 
 /* ACTIVE STATES */
-.nav-link:not(.nav-link.link):before{
+.nav-link:not(.nav-link.link):before,.link-item:before{
     content: "";
     position: absolute;
     width: 100%;
@@ -72,7 +72,7 @@
     transform: scale(0);
     transition: .3s ease-in-out;
 }
-.nav-link:not(.nav-link.link):hover::before{
+.nav-link:not(.nav-link.link):hover::before,.link-item:hover:before{
     transform: scale(1);
 }
 .nav-link:hover{

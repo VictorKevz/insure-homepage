@@ -80,6 +80,8 @@
 }
 
 .hero-intro-img:hover{
-    transform: scale(1.05) rotate(15deg);
+    transform: scale(0.8) rotate(15deg);
     transition: .3s ease-in-out;
+    border-radius: 20%;
+    cursor: pointer;
 }
