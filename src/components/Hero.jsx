@@ -43,9 +43,9 @@ function Hero() {
       <div className="hero-container wrapper">
         <motion.div 
         className="pattern top-container"
-        initial={{opacity:0,y:"-50%"}}
-        animate={{opacity:1,y:0}}
-        transition={{ease:"easeIn", duration:1}}
+        // initial={{opacity:0,y:"-50%"}}
+        // animate={{opacity:1,y:0}}
+        // transition={{ease:"easeIn", duration:1}}
         >
           <picture>
             <source media="(max-width:600 )" srcSet={patternRightMobile} />
@@ -56,9 +56,9 @@ function Hero() {
           <div className="hero-info-container">
             <motion.section 
             className="hero-text-container"
-            variants={heroTextVariants}
-            initial="hidden"
-            animate="visible"
+            // variants={heroTextVariants}
+            // initial="hidden"
+            // animate="visible"
             >
               <div className="top-line"></div>
               <h1 className="hero-title">Humanizing <br/>your insurance.</h1>
@@ -72,9 +72,9 @@ function Hero() {
             </motion.section>
             <motion.div 
             className="hero-image-container"
-            variants={heroImageVariants}
-            initial="hidden"
-            animate="visible"
+            // variants={heroImageVariants}
+            // initial="hidden"
+            // animate="visible"
             >
               <picture>
                 <source media="(max-width:600 )" srcSet={introIMGMobile} />
@@ -88,9 +88,9 @@ function Hero() {
 
       <motion.div 
       className="pattern bottom-container"
-      initial={{opacity:0,y:"100%"}}
-        animate={{opacity:1,y:0}}
-        transition={{ease:"easeIn", duration:1}}
+      // initial={{opacity:0,y:"100%"}}
+      //   animate={{opacity:1,y:0}}
+      //   transition={{ease:"easeIn", duration:1}}
       >
       <picture>
         <source media="(max-width:600 )" srcSet={patternLeftMobile} />
