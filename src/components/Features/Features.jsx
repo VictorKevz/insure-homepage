@@ -36,7 +36,7 @@ function Features() {
         </div>
         <div className="cta-container">
             <h4 className="cta-title">Find out more <br/>about how we work</h4>
-            <a href="" className="cta link">How we work</a>
+            <a className="cta link">How we work</a>
         </div>
       </div>
     </div>

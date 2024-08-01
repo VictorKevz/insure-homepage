@@ -1,6 +1,6 @@
 /* Common Styles */
 
-.nav.wrapper,.hero.wrapper,.hero-container.wrapper,.features.wrapper{
+.nav.wrapper,.hero.wrapper,.hero-container.wrapper,.features.wrapper,.footer.wrapper{
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -11,14 +11,29 @@
   width: 14.7rem;
   height: 4rem;
   border: 2px solid var(--Very-Light-Gray);
-  color: var(--Very-Light-Gray);  
+  color: var(--Very-Light-Gray);
+  color: red;  
   justify-content: center;
   align-items: center;
   display: flex;
   text-transform: uppercase;
   font-size: 1.42rem;
-letter-spacing: 1.7px;
+letter-spacing: 1px;
 font-weight: 700;
+transition: .3s ease-in-out;
 
 
+
+}
+.link:hover{
+  background-color: var(--Very-Light-Gray);
+  color: var(--Very-Dark-Violet);
+  transform: scale(1.1);
+
+}
+li{
+  width: fit-content;
+  position: relative;
+    text-transform: uppercase;
+    font-size: 1.42rem;
 }

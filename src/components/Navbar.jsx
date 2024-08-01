@@ -24,12 +24,24 @@ function Navbar() {
     },
   };
 
+  //   const linkVariants = {
+  //     hidden: { opacity: 1 },
+  //     visible: { opacity: 1 },
+  //     hover: {
+  //         scale:1.1,
+  //       transition: {
+  //         yoyo: Infinity,
+  //         duration: 0.3,
+  //       },
+  //     },
+  //   };
+
   return (
-    <motion.header 
-    className="nav wrapper"
-    variants={navVariants}
-    initial="hidden"
-    animate="visible"
+    <motion.header
+      className="nav wrapper"
+      variants={navVariants}
+      initial="hidden"
+      animate="visible"
     >
       <nav className="nav-container">
         <div className="logo-container">

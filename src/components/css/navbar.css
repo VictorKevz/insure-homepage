@@ -23,11 +23,9 @@
 .nav-link{
     display: flex;
     align-items: center;
-    text-transform: uppercase;
-    font-size: 1.42rem;
     letter-spacing: 1.7px;
     margin-top: 2px;
-    width: fit-content;
+   
 }
 .nav-link:nth-child(1){
     margin-right: 2.25rem;
@@ -59,5 +57,30 @@
     background-color: var(--Very-Dark-Violet);
     z-index: 5;
     display: none;
+
+}
+
+/* ACTIVE STATES */
+.nav-link:not(.nav-link.link):before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--Dark-Violet);
+    left: 0;
+    bottom: -3px;
+    transform: scale(0);
+    transition: .3s ease-in-out;
+}
+.nav-link:not(.nav-link.link):hover::before{
+    transform: scale(1);
+}
+.nav-link:hover{
+color: var(--Very-Dark-Violet);
+}
+.nav-link.link:hover{
+    background-color: var(--Very-Dark-Violet);
+    color: var(--Very-Light-Gray);
+    transform: scale(1.1);
 
 }
