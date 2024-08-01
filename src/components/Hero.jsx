@@ -48,7 +48,7 @@ function Hero() {
         // transition={{ease:"easeIn", duration:1}}
         >
           <picture>
-            <source media="(max-width:600 )" srcSet={patternRightMobile} />
+            <source media="(max-width:860px)" srcSet={patternRightMobile} />
             <img src={patternRightDesktop} alt="bg-pattern-right" />
           </picture>
         </motion.div>
@@ -76,8 +76,8 @@ function Hero() {
             // initial="hidden"
             // animate="visible"
             >
-              <picture>
-                <source media="(max-width:600 )" srcSet={introIMGMobile} />
+              <picture >
+                <source media="(max-width:500px)" srcSet={introIMGMobile} />
                 <img src={introIMGDesktop} alt="hero-intro-image" className="hero-intro-img" />
               </picture>
             </motion.div>
@@ -93,7 +93,7 @@ function Hero() {
       //   transition={{ease:"easeIn", duration:1}}
       >
       <picture>
-        <source media="(max-width:600 )" srcSet={patternLeftMobile} />
+        <source media="(max-width:860px)" srcSet={patternLeftMobile} />
         <img src={patternLeftDesktop} alt="bg-pattern-left" />
       </picture>
       </motion.div>

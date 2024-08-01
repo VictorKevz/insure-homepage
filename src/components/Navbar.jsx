@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../assets/images/logo.svg";
 import open from "../assets/images/icon-hamburger.svg";
 import close from "../assets/images/icon-close.svg";
+import pattern from "../assets/images/bg-pattern-mobile-nav.svg"
 import { motion, AnimatePresence, delay } from "framer-motion";
 import "./css/navbar.css";
 
@@ -38,12 +39,12 @@ function Navbar() {
 
   return (
     <motion.header
-      className="nav wrapper"
+      className={`nav wrapper ${isOpen ? "open" : ""}`}
       // variants={navVariants}
       // initial="hidden"
       // animate="visible"
     >
-      <nav className="nav-container">
+      <nav className={`nav-container ${isOpen ? "open" : ""}`}>
         <div className="logo-container">
           <img src={logo} alt="logo" className="nav-logo" />
         </div>
@@ -60,8 +61,11 @@ function Navbar() {
             alt={`${isOpen ? "close-icon" : "open-icon"}`}
           />
         </div>
+        
       </nav>
-      <div className={`mask ${isOpen ? "open" : ""}`}></div>
+      <div className={`mask ${isOpen ? "open" : ""}`}>
+        <div className="inner-mask"></div>
+      </div>
     </motion.header>
   );
 }

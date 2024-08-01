@@ -1,9 +1,9 @@
 .hero{
     min-height: 935px;
     width: 100%;
-    /* background-color: rgb(13, 71, 52); */
     position: relative;
     overflow-x: hidden;
+
 
 }
 .hero-container{
@@ -23,8 +23,16 @@
     gap: 3.1rem;
     margin-top: 10.5rem;
 
-}
 
+}
+.hero-image-container{
+    max-width: 540px;
+    width: 100%;
+}
+.hero-intro-img{
+    width: 100%;
+    height: auto;
+}
 .top-line,.bottom-line{
     width:150px ;
     height: 1px;
@@ -46,7 +54,7 @@
     font-size: 6.94rem;
     line-height: .96;
     margin-top: 6.05rem;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: .03rem;
 
 }
@@ -60,14 +68,10 @@
 .hero-CTA.link{
   margin-top: 2.9rem;
 }
-.hero-image-container{
-    max-width: 540px;
-}
-.hero-intro-img{
-    width: 100%;
-}
+
+
 .pattern{
-    z-index: 4;
+    z-index: 3;
     position: absolute;
 }
 .pattern.top-container{
