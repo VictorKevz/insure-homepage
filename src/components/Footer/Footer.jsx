@@ -23,11 +23,11 @@ function Footer() {
           <img src={logo} alt="footer-logo" className="footer-logo" />
           <motion.div
             className="social-icons-container"
-            // variants={fadeIn("right", 0.3)}
-            // initial="hidden"
-            // whileInView={"visible"}
-            // viewport={{ once: false, amount: 0.1 }}
-            // exit="exit"
+            variants={fadeIn("right", 0.3)}
+            initial="hidden"
+            whileInView={"visible"}
+            viewport={{ once: false, amount: 0.1 }}
+            exit="exit"
           >
             <img src={fb} alt="facebook-icon" className="footer-icon" />
             <img src={twitter} alt="twitter-icon" className="footer-icon" />
@@ -51,10 +51,10 @@ function Footer() {
               <motion.li
                 key={obj.id}
                 className={`link-name ${footerClassName}`}
-                // variants={fadeIn("down", 0.3)}
-                // initial="hidden"
-                // whileInView={"visible"}
-                // viewport={{ once: false, amount: 0.1 }}
+                variants={fadeIn("down", 0.3)}
+                initial="hidden"
+                whileInView={"visible"}
+                viewport={{ once: false, amount: 0.1 }}
               >
                 {obj.name}
                 <ul className={`footer-link ${footerClassName}`}>

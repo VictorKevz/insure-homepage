@@ -43,9 +43,9 @@ function Hero() {
       <div className="hero-container wrapper">
         <motion.div 
         className="pattern top-container"
-        // initial={{opacity:0,y:"-50%"}}
-        // animate={{opacity:1,y:0}}
-        // transition={{ease:"easeIn", duration:1}}
+        initial={{opacity:0,y:"-50%"}}
+        animate={{opacity:1,y:0}}
+        transition={{ease:"easeIn", duration:1}}
         >
           <picture>
             <source media="(max-width:860px)" srcSet={patternRightMobile} />
@@ -72,9 +72,9 @@ function Hero() {
             </motion.section>
             <motion.div 
             className="hero-image-container"
-            // variants={heroImageVariants}
-            // initial="hidden"
-            // animate="visible"
+            variants={heroImageVariants}
+            initial="hidden"
+            animate="visible"
             >
               <picture >
                 <source media="(max-width:500px)" srcSet={introIMGMobile} />
@@ -88,9 +88,9 @@ function Hero() {
 
       <motion.div 
       className="pattern bottom-container"
-      // initial={{opacity:0,y:"100%"}}
-      //   animate={{opacity:1,y:0}}
-      //   transition={{ease:"easeIn", duration:1}}
+      initial={{opacity:0,y:"100%"}}
+        animate={{opacity:1,y:0}}
+        transition={{ease:"easeIn", duration:1}}
       >
       <picture>
         <source media="(max-width:860px)" srcSet={patternLeftMobile} />

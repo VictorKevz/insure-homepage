@@ -10,20 +10,20 @@ function Features() {
       <div className="features-container">
         <motion.h2
           className="features-main-title"
-          // variants={fadeIn("right", 0.2)}
-          // initial="hidden"
-          // whileInView={"visible"}
-          // viewport={{ once: false, amount: 0.2 }}
-          // exit="exit"
+          variants={fadeIn("right", 0.2)}
+          initial="hidden"
+          whileInView={"visible"}
+          viewport={{ once: false, amount: 0.2 }}
+          exit="exit"
         >
           We're different
         </motion.h2>
         <motion.div
           className="features-card"
-          // variants={fadeIn("up", 0.3)}
-          // initial="hidden"
-          // whileInView={"visible"}
-          // viewport={{ once: false, amount: 0.1 }}
+          variants={fadeIn("up", 0.3)}
+          initial="hidden"
+          whileInView={"visible"}
+          viewport={{ once: false, amount: 0.1 }}
         >
           {featuresData.map((feature) => {
             let featureClassName;
@@ -65,10 +65,10 @@ function Features() {
 
         <motion.div
           className="cta-container"
-          // variants={fadeIn("left", 0.2)}
-          // initial="hidden"
-          // whileInView={"visible"}
-          // viewport={{ once: false, amount: 0.3 }}
+          variants={fadeIn("left", 0.2)}
+          initial="hidden"
+          whileInView={"visible"}
+          viewport={{ once: false, amount: 0.3 }}
         >
           <h4 className="cta-title">
             Find out more <br />

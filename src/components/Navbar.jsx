@@ -40,9 +40,9 @@ function Navbar() {
   return (
     <motion.header
       className={`nav wrapper ${isOpen ? "open" : ""}`}
-      // variants={navVariants}
-      // initial="hidden"
-      // animate="visible"
+      variants={navVariants}
+      initial="hidden"
+      animate="visible"
     >
       <nav className={`nav-container ${isOpen ? "open" : ""}`}>
         <div className="logo-container">
