@@ -56,9 +56,9 @@ function Hero() {
           <div className="hero-info-container">
             <motion.section 
             className="hero-text-container"
-            // variants={heroTextVariants}
-            // initial="hidden"
-            // animate="visible"
+            variants={heroTextVariants}
+            initial="hidden"
+            animate="visible"
             >
               <div className="top-line"></div>
               <h1 className="hero-title">Humanizing <br/>your insurance.</h1>
